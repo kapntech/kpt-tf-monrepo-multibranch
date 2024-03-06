@@ -72,7 +72,7 @@ resource "azurerm_network_interface" "nic2" {
   }
 
   tags = {
-    Enviro = "DEVO"
+    Enviro = "DEVOLUTION"
   }
 }
 
