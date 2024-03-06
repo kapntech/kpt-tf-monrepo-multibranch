@@ -72,7 +72,7 @@ resource "azurerm_network_interface" "nic2" {
   }
 
   tags = {
-    Enviro = "PROD"
+    Enviro = "DEVO"
   }
 }
 
@@ -82,7 +82,7 @@ resource "azurerm_linux_virtual_machine" "linux" {
   name                            = "linux-vm"
   resource_group_name             = azurerm_resource_group.rg.name
   location                        = azurerm_resource_group.rg.location
-  size                            = "Standard_DS1_v2"
+  size                            = "Standard_DS2_v2"
   priority                        = "Spot"
   eviction_policy                 = "Deallocate"
   admin_username                  = "azadmin"
